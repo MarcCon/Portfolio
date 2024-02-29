@@ -9,7 +9,7 @@ function Portfolio() {
       </div>
       <div className="pb-32">
         <Project
-          imageSrc="/src/assets/oasis.png"
+          imageSrc="/oasis.png"
           imageAlt="Bild"
           title="Reservierungssystem"
           technologies={["React", "Tailwind"]}
@@ -20,7 +20,7 @@ function Portfolio() {
         />
 
         <Project
-          imageSrc="/src/assets/projektMadrid.png"
+          imageSrc="/projektMadrid.png"
           imageAlt="Bild"
           title="Reisetagebuch"
           technologies={["React", "Tailwind"]}
