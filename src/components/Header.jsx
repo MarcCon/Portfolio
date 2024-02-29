@@ -39,7 +39,7 @@ const Header = () => {
               autoPlay
               muted
               loop
-              src="/public/VideoMe.mp4"
+              src="../public/VideoMe.mp4"
             ></video>
           </div>
         </div>
