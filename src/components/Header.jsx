@@ -46,10 +46,10 @@ const Header = () => {
         <div className="pt-16 flex justify-center items-center flex-row w-auto h-16 gap-8 ">
           <p className="text-white text-3xl font-thin ">Tech Stack</p>
           <div className="flex flex-row w-auto h-10 gap-8  ">
-            <img src="/src/assets/Skills/javascript.png" />
-            <img src="/src/assets/Skills/node.png" />
-            <img src="/src/assets/Skills/react.png" />
-            <img src="/src/assets/Skills/postgres.png" />
+            <img src="/javascript.png" />
+            <img src="/node.png" />
+            <img src="/react.png" />
+            <img src="/postgres.png" />
           </div>
         </div>
       </div>
