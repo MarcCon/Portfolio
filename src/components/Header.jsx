@@ -1,7 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import { BackgroundBeams } from "./background-beams";
-import { TextGenerateEffect } from "./text-generate-effect";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 
@@ -9,33 +7,33 @@ const Header = () => {
   return (
     <>
       <Navbar />
-      <div className="h-screen w-full  flex flex-col  items-center justify-center ">
-        <div className="flex flex-row justify-center items-center   gap-24">
-          <div>
-            <div className="flex gap-4">
-              <div className="h-[15px] w-[200px] bg-gradient-to-r from-orange-400 to-pink-500"></div>
-              <div className="h-[15px] w-[100px] bg-gradient-to-r from-yellow-300 to-green-400"></div>
+      <div className="mx-auto flex h-screen w-full max-w-5xl flex-col items-center justify-center px-16 lg:px-0 ">
+        <div className="flex flex-col-reverse gap-16 md:flex-row lg:gap-24">
+          <div className="text-center md:text-left">
+            <div className="flex justify-center gap-2 md:justify-start lg:gap-4">
+              <div className="h-[10px] w-[100px] bg-gradient-to-r from-orange-400 to-pink-500 sm:h-[10px] sm:w-[130px] lg:h-[15px] lg:w-[200px]"></div>
+              <div className="h-[10px] w-[60px] bg-gradient-to-r from-yellow-300 to-green-400 sm:h-[10px] sm:w-[130px] lg:h-[15px] lg:w-[100px]"></div>
             </div>
 
-            <div className="flex gap-4 mt-2 mb-4">
-              <div className="h-[15px] w-[130px] bg-gradient-to-r from-cyan-400 to-blue-700"></div>
-              <div className="h-[15px] w-[250px] bg-gradient-to-r from-purple-400 to-pink-300"></div>
+            <div className="mb-4 mt-2 flex content-center justify-center gap-2 md:justify-start">
+              <div className="h-[10px] w-[70px] bg-gradient-to-r from-cyan-400 to-blue-700 sm:h-[10px]  sm:w-[100px] lg:h-[15px] lg:w-[130px]"></div>
+              <div className="h-[10px] w-[100px] bg-gradient-to-r from-purple-400 to-pink-300 sm:h-[10px] sm:w-[100px] lg:h-[15px] lg:w-[250px]"></div>
             </div>
 
-            <h1 className="text-6xl font-inter font-extrabold text-white ">
+            <h1 className="font-inter text-4xl font-extrabold text-white lg:text-6xl ">
               Front-End Developer
             </h1>
-            <h2 className="text-2xl font-inter font-normal text-white pt-8">
+            <h2 className="pt-4 font-inter text-lg font-normal text-white lg:pt-8 lg:text-2xl">
               Hi, ich bin Marc, React Front-End Entwickler aus Leipzig.
             </h2>
-            <div className="flex flex-row pt-4 gap-4">
+            <div className="flex flex-row justify-center gap-4 pt-4 md:justify-start">
               <CiLinkedin size={30} color="white" />
               <FaGithub size={30} color="white" />
             </div>
           </div>
-          <div className="flex justify-center items-center bg-white w-64 h-64 rounded-full overflow-hidden shadow-glow">
+          <div className="mx-auto flex h-52 w-52 items-center justify-center overflow-hidden rounded-full bg-black shadow-glow lg:h-64 lg:w-64">
             <video
-              className="min-w-full min-h-full"
+              className="min-h-full min-w-full object-cover"
               autoPlay
               muted
               loop
@@ -43,9 +41,11 @@ const Header = () => {
             ></video>
           </div>
         </div>
-        <div className="pt-16 flex justify-center items-center flex-row w-auto h-16 gap-8 ">
-          <p className="text-white text-3xl font-thin ">Tech Stack</p>
-          <div className="flex flex-row w-auto h-10 gap-8  ">
+        <div className="mx-auto flex h-16 flex-row items-center justify-center gap-4 pt-16 sm:gap-8 ">
+          <p className="xs:text-xl text-base font-thin text-white sm:text-2xl lg:text-3xl ">
+            Tech Stack
+          </p>
+          <div className="flex h-6 w-auto flex-row gap-4 sm:h-8 sm:gap-6 lg:h-10 lg:gap-8  ">
             <img src="/Skills/javascript.png" />
             <img src="/Skills//node.png" />
             <img src="/Skills//react.png" />

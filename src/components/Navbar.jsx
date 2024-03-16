@@ -1,35 +1,40 @@
 import React from "react";
+import MobilNav from "./MobilNav";
 
 const Navbar = () => {
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full bg-darkblue flex justify-end items-center text-white text-xl p-8 font-bold pr-32 pl-32 shadow-slate-800 shadow-md ">
-        <div className="mr-auto flex items-center">
-          <p className="font-bold hover:text-mypurple transition ease-in-out duration-300">
+      <nav className="fixed left-0 top-0 w-full items-center justify-end bg-darkblue p-8 px-16 text-xl font-bold text-white shadow-md shadow-slate-800 sm:flex">
+        <div className="mr-auto items-center">
+          <p className="w-[90px] font-bold transition duration-300 ease-in-out hover:text-mypurple">
             marc.dev
           </p>
         </div>
-        <div className="flex gap-12">
+        <div className="hidden gap-12 sm:flex">
           <a
-            href=""
-            className="hover:text-mypurple transition ease-in-out duration-300"
+            href="#uebermich"
+            className="transition duration-300 ease-in-out hover:text-mypurple"
           >
             Über mich
           </a>
           <a
-            href=""
-            className="hover:text-mypurple transition ease-in-out duration-300"
+            href="#portfolio"
+            className="transition duration-300 ease-in-out hover:text-mypurple"
           >
             Portfolio
           </a>
           <a
-            href=""
-            className="hover:text-mypurple transition ease-in-out duration-300"
+            href="#kontakt"
+            className="transition duration-300 ease-in-out hover:text-mypurple"
           >
             Kontakt
           </a>
         </div>
       </nav>
+
+      <div className="fixed right-6 top-6 z-50 sm:hidden">
+        <MobilNav />
+      </div>
     </>
   );
 };
