@@ -10,30 +10,30 @@ function LegalFooter() {
         <div className="flex gap-4 md:gap-4 lg:gap-16 ">
           <div className="flex items-center gap-1  sm:gap-1">
             <FaGithub className="text-base text-white sm:text-xl xl:text-2xl" />
-            <p className="font-inter text-xs text-white sm:text-base xl:text-lg">
+            <p className="font-inter text-sm text-white sm:text-base xl:text-lg">
               github.com/MarcCon
             </p>
           </div>
           <div className="flex items-center gap-1 sm:gap-1">
             <IoMailOutline className="text-base text-white sm:text-xl xl:text-2xl" />
-            <p className="font-inter text-xs text-white sm:text-base xl:text-lg">
+            <p className="font-inter text-sm text-white sm:text-base xl:text-lg">
               kontakt@marcenke.de
             </p>
           </div>
         </div>
         <div className="flex items-center justify-center gap-1 sm:gap-1">
           <CiLinkedin className="text-base text-white sm:text-xl xl:text-2xl" />
-          <p className="font-inter text-xs text-white sm:text-base xl:text-lg">
+          <p className="font-inter text-sm text-white sm:text-base xl:text-lg">
             LinkedIn
           </p>
         </div>
       </div>
 
       <div className="flex items-center gap-8">
-        <p className="font-inter text-xs text-gray-400 sm:text-base xl:text-lg">
+        <p className="font-inter text-sm text-gray-400 sm:text-base xl:text-lg">
           Impressum
         </p>
-        <p className="font-inter text-xs text-gray-400 sm:text-base xl:text-lg">
+        <p className="font-inter text-sm text-gray-400 sm:text-base xl:text-lg">
           Datenschutz
         </p>
       </div>
