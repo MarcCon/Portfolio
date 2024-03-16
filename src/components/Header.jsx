@@ -37,6 +37,7 @@ const Header = () => {
               autoPlay
               muted
               loop
+              playsInline
               src="/VideoMe.mp4"
             ></video>
           </div>
