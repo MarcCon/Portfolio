@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 
 const Header = () => {
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   return (
     <>
       <Navbar />
@@ -32,6 +33,13 @@ const Header = () => {
             </div>
           </div>
           <div className="mx-auto flex h-52 w-52 items-center justify-center overflow-hidden rounded-full bg-black shadow-glow lg:h-64 lg:w-64">
+            {!isVideoLoaded && (
+              <img
+                className="min-h-full min-w-full object-cover"
+                src="/StandBildIch.png"
+                alt="Loading"
+              />
+            )}
             <video
               className="min-h-full min-w-full object-cover"
               autoPlay
@@ -39,6 +47,8 @@ const Header = () => {
               loop
               playsInline
               src="/VideoMe.mp4"
+              onLoadedData={() => setIsVideoLoaded(true)}
+              style={{ display: isVideoLoaded ? "block" : "none" }} // Versteckt das Video, bis es geladen ist
             ></video>
           </div>
         </div>
