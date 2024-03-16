@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <>
       <Navbar />
-      <div className="mx-auto flex h-screen w-full max-w-5xl flex-col items-center justify-center px-4 pt-8 sm:px-16 sm:pt-0 lg:px-0 ">
+      <div className="mx-auto flex h-screen w-full max-w-5xl flex-col items-center justify-center px-4 sm:px-16 sm:pt-0 lg:px-0 ">
         <div className="flex flex-col-reverse gap-8 sm:gap-16 md:flex-row lg:gap-24">
           <div className="text-center md:text-left">
             <div className="flex justify-center gap-2 md:justify-start lg:gap-4">
