@@ -34,7 +34,6 @@ const Header = () => {
           <div className="mx-auto flex h-52 w-52 items-center justify-center overflow-hidden rounded-full bg-black shadow-glow lg:h-64 lg:w-64">
             <video
               className="min-h-full min-w-full object-cover"
-              autoPlay
               preload="auto"
               muted
               loop
