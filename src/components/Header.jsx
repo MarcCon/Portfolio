@@ -52,7 +52,7 @@ const Header = () => {
             ></video>
           </div>
         </div>
-        <div className="mx-auto flex h-16 flex-row items-center justify-center gap-4 pt-16 sm:gap-8 ">
+        <div className="flex h-16 flex-row items-center justify-center gap-4 pt-16 sm:gap-8 ">
           <p className="xs:text-xl text-base font-thin text-white sm:text-2xl lg:text-3xl ">
             Tech Stack
           </p>
