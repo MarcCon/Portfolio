@@ -5,7 +5,7 @@ function Portfolio() {
   return (
     <>
       <div id="portfolio" class="relative mt-[-100px]  block pt-[100px]"></div>
-      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center px-16 pt-16 lg:px-0">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center px-4 pt-16 sm:px-16 lg:px-0">
         <h2 className="font-inter font-extrabold text-mypurple sm:text-2xl">
           Mein Portfolio
         </h2>

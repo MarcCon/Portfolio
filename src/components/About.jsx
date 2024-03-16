@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-16 px-16 pb-4 sm:pb-48 lg:flex-row lg:px-6  ">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-16 px-4 pb-4 sm:px-16 sm:pb-48 lg:flex-row lg:px-6  ">
         <img
           src="/aboutPic.jpg"
           className="h-[300px] w-auto rounded-2xl xl:h-[400px]"

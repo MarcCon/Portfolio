@@ -8,8 +8,8 @@ const Header = () => {
   return (
     <>
       <Navbar />
-      <div className="mx-auto flex h-screen w-full max-w-5xl flex-col items-center justify-center px-16 lg:px-0 ">
-        <div className="flex flex-col-reverse gap-16 md:flex-row lg:gap-24">
+      <div className="mx-auto flex h-screen w-full max-w-5xl flex-col items-center justify-center px-4 pt-8 sm:px-16 sm:pt-0 lg:px-0 ">
+        <div className="flex flex-col-reverse gap-8 sm:gap-16 md:flex-row lg:gap-24">
           <div className="text-center md:text-left">
             <div className="flex justify-center gap-2 md:justify-start lg:gap-4">
               <div className="h-[10px] w-[100px] bg-gradient-to-r from-orange-400 to-pink-500 sm:h-[10px] sm:w-[130px] lg:h-[15px] lg:w-[200px]"></div>
@@ -21,7 +21,7 @@ const Header = () => {
               <div className="h-[10px] w-[100px] bg-gradient-to-r from-purple-400 to-pink-300 sm:h-[10px] sm:w-[100px] lg:h-[15px] lg:w-[250px]"></div>
             </div>
 
-            <h1 className="font-inter text-4xl font-extrabold text-white lg:text-6xl ">
+            <h1 className="font-inter text-3xl font-extrabold text-white sm:text-4xl lg:text-6xl ">
               Front-End Developer
             </h1>
             <h2 className="pt-4 font-inter text-lg font-normal text-white lg:pt-8 lg:text-2xl">
@@ -32,7 +32,7 @@ const Header = () => {
               <FaGithub size={30} color="white" />
             </div>
           </div>
-          <div className="mx-auto flex h-52 w-52 items-center justify-center overflow-hidden rounded-full bg-black shadow-glow lg:h-64 lg:w-64">
+          <div className="mx-auto flex h-40 w-40 items-center justify-center overflow-hidden rounded-full bg-black shadow-glow sm:h-52 sm:w-52 lg:h-64 lg:w-64">
             {!isVideoLoaded && (
               <img
                 className="min-h-full min-w-full object-cover"
