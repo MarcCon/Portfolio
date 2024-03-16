@@ -12,7 +12,7 @@ const MobilNav = () => {
           toggled={isOpen}
           toggle={setIsOpen}
           color="white"
-          size={30}
+          size={25}
         />
       </div>
       <AnimatePresence>

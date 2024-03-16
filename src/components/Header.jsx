@@ -61,10 +61,10 @@ const Header = () => {
             Tech Stack
           </p>
           <div className="flex w-auto flex-row gap-4 sm:gap-6 lg:gap-8  ">
-            <FaReact className="text-3xl text-blue-400" />
-            <SiTailwindcss className="text-3xl text-blue-400" />
-            <FaNodeJs className="text-3xl text-blue-400" />
-            <IoLogoJavascript className="text-3xl text-blue-400" />
+            <FaReact className="text-ReactBlue text-2xl" />
+            <FaNodeJs className="text-NodeGreen text-2xl" />
+            <IoLogoJavascript className="text-JavascriptYellow text-2xl" />
+            <SiTailwindcss className="text-TailwindBlue text-2xl" />
           </div>
         </div>
       </div>

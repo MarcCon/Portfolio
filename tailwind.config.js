@@ -14,6 +14,10 @@ module.exports = {
         lightblue: "rgb(20,16,23)",
         mypurple: "rgb(238,130,238, .7)",
         projectblue: "rgb(18,15,55)",
+        ReactBlue: "rgb(0 216 255)",
+        TailwindBlue: "rgb(49,181,247)",
+        NodeGreen: "rgb(72,148,57)",
+        JavascriptYellow: "rgb(238,215,69)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
@@ -34,7 +38,7 @@ module.exports = {
 function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
   );
 
   addBase({
