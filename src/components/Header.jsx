@@ -35,6 +35,7 @@ const Header = () => {
             <video
               className="min-h-full min-w-full object-cover"
               autoPlay
+              preload="auto"
               muted
               loop
               playsInline
