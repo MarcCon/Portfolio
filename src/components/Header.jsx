@@ -52,7 +52,8 @@ const Header = () => {
             ></video>
           </div>
         </div>
-        <div className="flex h-16 flex-row items-center justify-center gap-4 pt-16 sm:gap-8 ">
+        <p className="flex justify-center text-4xl text-white">Test</p>
+        {/* <div className="flex h-16 flex-row items-center justify-center gap-4 pt-16 sm:gap-8 ">
           <p className="xs:text-xl text-base font-thin text-white sm:text-2xl lg:text-3xl ">
             Tech Stack
           </p>
@@ -62,7 +63,7 @@ const Header = () => {
             <img src="/Skills//react.png" />
             <img src="/Skills//postgres.png" />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
