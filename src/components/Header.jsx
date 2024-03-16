@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
 
 const Header = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
@@ -56,11 +60,11 @@ const Header = () => {
           <p className="xs:text-xl text-base font-thin text-white sm:text-2xl lg:text-3xl ">
             Tech Stack
           </p>
-          <div className="flex h-6 w-auto flex-row gap-4 sm:h-8 sm:gap-6 lg:h-10 lg:gap-8  ">
-            <img src="/Skills/javascript.png" />
-            <img src="/Skills//node.png" />
-            <img src="/Skills//react.png" />
-            <img src="/Skills//postgres.png" />
+          <div className="flex w-auto flex-row gap-4 sm:gap-6 lg:gap-8  ">
+            <FaReact className="text-3xl text-blue-400" />
+            <SiTailwindcss className="text-3xl text-blue-400" />
+            <FaNodeJs className="text-3xl text-blue-400" />
+            <IoLogoJavascript className="text-3xl text-blue-400" />
           </div>
         </div>
       </div>
