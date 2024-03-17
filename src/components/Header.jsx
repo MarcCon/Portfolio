@@ -13,7 +13,7 @@ const Header = () => {
     <>
       <Navbar />
       <div className="bg-darkblue">
-        <div className="-m-16  mx-auto  flex h-screen w-full max-w-5xl flex-col items-center justify-center px-4 lg:px-0">
+        <div className="-my-20 mx-auto  flex  h-screen w-full max-w-5xl flex-col items-center justify-center px-4 sm:-my-16 lg:px-0">
           <div className="flex flex-col-reverse gap-8 md:flex-row md:gap-16 lg:gap-24">
             <div className="text-center md:text-left">
               <div className="flex justify-center gap-2 md:justify-start">
