@@ -61,7 +61,7 @@ const Header = () => {
                 />
               )}
               <video
-                className="min-h-full min-w-full rounded-full object-cover"
+                className="min-h-full min-w-full rounded-full"
                 autoPlay
                 muted
                 loop
