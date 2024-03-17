@@ -61,7 +61,7 @@ const Header = () => {
                 />
               )}
               <video
-                className="h-24 min-h-full w-24 min-w-full rounded-full"
+                className=" h-40 w-40 rounded-full sm:h-52 sm:w-52 lg:h-64 lg:w-64"
                 autoPlay
                 muted
                 loop
