@@ -1,34 +1,45 @@
 import React from "react";
 import MobilNav from "./MobilNav";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
     <>
-      <nav className="fixed left-0 top-0 w-full items-center justify-end bg-darkblue p-8 px-8 text-base font-bold text-white shadow-md shadow-slate-800 sm:flex sm:px-16 sm:text-xl">
-        <div className="mr-auto items-center">
+      <nav className="fixed left-0 top-0 flex w-full items-center justify-end bg-darkblue p-8 text-base font-bold text-white shadow-md shadow-slate-800 sm:px-16 sm:text-xl">
+        <div className="mr-auto">
           <p className="w-[90px] font-bold transition duration-300 ease-in-out hover:text-mypurple">
             marc.dev
           </p>
         </div>
         <div className="hidden gap-12 sm:flex">
-          <a
-            href="#uebermich"
-            className="transition duration-300 ease-in-out hover:text-mypurple"
+          {/* Verwende Link von react-scroll statt <a href="#"> */}
+          <Link
+            to="about"
+            offset={-290}
+            smooth={true}
+            duration={500}
+            className="cursor-pointer transition duration-300 ease-in-out hover:text-mypurple"
           >
             Über mich
-          </a>
-          <a
-            href="#portfolio"
-            className="transition duration-300 ease-in-out hover:text-mypurple"
+          </Link>
+          <Link
+            to="portfolio"
+            offset={-100}
+            smooth={true}
+            duration={500}
+            className="cursor-pointer transition duration-300 ease-in-out hover:text-mypurple"
           >
             Portfolio
-          </a>
-          <a
-            href="#kontakt"
-            className="transition duration-300 ease-in-out hover:text-mypurple"
+          </Link>
+          <Link
+            to="kontakt"
+            offset={-100}
+            smooth={true}
+            duration={500}
+            className="cursor-pointer transition duration-300 ease-in-out hover:text-mypurple"
           >
             Kontakt
-          </a>
+          </Link>
         </div>
       </nav>
 

@@ -6,8 +6,8 @@ function Datenschutz() {
     <div className="bg-darkblue text-white">
       <Navbar />
       <div className="flex justify-center">
-        <div className="pt-44 content-center text-center w-[800px]">
-          <h1 className="text-3xl text-bold pb-8">
+        <div className="w-[800px] content-center pt-44 text-center">
+          <h1 className="text-bold pb-8 text-3xl">
             Datenschutz&shy;erkl&auml;rung
           </h1>
           <h2>1. Datenschutz auf einen Blick</h2>
@@ -397,10 +397,7 @@ function Datenschutz() {
               https://www.dataprivacyframework.gov/s/participant-search/participant-detail?contact=true&id=a2zt000000001L5AAI&status=Active
             </a>
           </p>
-          <p>
-            Quelle:{" "}
-            <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
-          </p>
+          <p></p>
         </div>
       </div>
     </div>

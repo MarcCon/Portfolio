@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const MobilNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,31 +27,39 @@ const MobilNav = () => {
           >
             <ul className="justify-center space-y-8 text-center font-inter text-2xl text-white">
               <li>
-                <a
-                  href="#uebermich"
+                <Link
+                  to="about"
+                  offset={-200}
+                  smooth={true}
+                  duration={500}
                   className="hover:text-gray-300"
                   onClick={() => setIsOpen(false)}
                 >
                   Über Mich
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#portfolio"
+                <Link
+                  to="portfolio"
+                  offset={0}
+                  smooth={true}
+                  duration={500}
                   className="hover:text-gray-300"
                   onClick={() => setIsOpen(false)}
                 >
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#kontakt"
+                <Link
+                  to="kontakt"
+                  smooth={true}
+                  duration={500}
                   className="hover:text-gray-300"
                   onClick={() => setIsOpen(false)}
                 >
                   Kontakt
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>
