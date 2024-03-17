@@ -15,7 +15,7 @@ const Header = () => {
       <div className="mx-auto flex h-screen w-full max-w-5xl flex-col items-center justify-center px-4 lg:px-0">
         <div className="flex flex-col-reverse gap-8 md:flex-row md:gap-16 lg:gap-24">
           <div className="text-center md:text-left">
-            <div className="flex justify-center gap-2 md:justify-start lg:gap-4">
+            <div className="flex justify-center gap-2 md:justify-start">
               <div className="h-[10px] w-[100px] bg-gradient-to-r from-orange-400 to-pink-500 lg:h-[15px] lg:w-[200px]"></div>
               <div className="h-[10px] w-[60px] bg-gradient-to-r from-yellow-300 to-green-400 lg:h-[15px] lg:w-[100px]"></div>
             </div>
