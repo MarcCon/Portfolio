@@ -51,7 +51,7 @@ const Header = () => {
                 </a>
               </div>
             </div>
-            <div className="mx-auto flex h-44 w-44 items-center justify-center overflow-hidden rounded-full bg-black shadow-glow sm:h-52 sm:w-52 lg:h-64 lg:w-64">
+            <div className="mx-auto flex h-40 w-40 items-center justify-center overflow-hidden rounded-full bg-black shadow-glow sm:h-48 sm:w-48 lg:h-64 lg:w-64">
               {!isVideoLoaded && (
                 <img
                   className="min-h-full min-w-full object-cover"
