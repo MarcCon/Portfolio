@@ -57,10 +57,10 @@ const Header = () => {
                   className="min-h-full min-w-full object-cover"
                   src="/StandBildIch.png"
                   alt="Loading"
-                  style={{ display: !isVideoLoaded ? "block" : "none" }} // Füge diese Zeile hinzu
+                  style={{ display: !isVideoLoaded ? "block" : "none" }}
                 />
               )}
-              <div className="flex h-40 w-40 items-center justify-center overflow-hidden rounded-full sm:h-52 sm:w-52 lg:h-64 lg:w-64">
+              <div className="h-22 w-22 flex items-center justify-center overflow-hidden rounded-full sm:h-52 sm:w-52 lg:h-64 lg:w-64">
                 <video
                   className="min-h-full min-w-full"
                   autoPlay
@@ -69,7 +69,7 @@ const Header = () => {
                   playsInline
                   src="/VideoMe.mp4"
                   onLoadedData={() => setIsVideoLoaded(true)}
-                  onError={() => setVideoError(true)} // Behandle Video-Ladefehler
+                  onError={() => setVideoError(true)}
                   style={{ display: isVideoLoaded ? "block" : "none" }}
                 ></video>
               </div>
