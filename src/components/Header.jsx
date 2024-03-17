@@ -60,19 +60,17 @@ const Header = () => {
                   style={{ display: !isVideoLoaded ? "block" : "none" }}
                 />
               )}
-              <div className="h-22 w-22 flex items-center justify-center overflow-hidden rounded-full sm:h-52 sm:w-52 lg:h-64 lg:w-64">
-                <video
-                  className="min-h-full min-w-full"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  src="/VideoMe.mp4"
-                  onLoadedData={() => setIsVideoLoaded(true)}
-                  onError={() => setVideoError(true)}
-                  style={{ display: isVideoLoaded ? "block" : "none" }}
-                ></video>
-              </div>
+              <video
+                className="h-24 min-h-full w-24 min-w-full rounded-full"
+                autoPlay
+                muted
+                loop
+                playsInline
+                src="/VideoMe.mp4"
+                onLoadedData={() => setIsVideoLoaded(true)}
+                onError={() => setVideoError(true)}
+                style={{ display: isVideoLoaded ? "block" : "none" }}
+              ></video>
             </div>
           </div>
           <div className="flex flex-row items-center justify-center gap-4 pt-8 sm:gap-8 sm:pt-16">
