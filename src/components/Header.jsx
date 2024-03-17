@@ -57,16 +57,18 @@ const Header = () => {
                   className="min-h-full min-w-full object-cover"
                   src="/StandBildIch.png"
                   alt="Loading"
+                  style={{ display: !isVideoLoaded ? "block" : "none" }} // Füge diese Zeile hinzu
                 />
               )}
               <video
-                className="min-h-full min-w-full object-cover"
+                className="min-h-full min-w-full overflow-hidden rounded-full object-cover"
                 autoPlay
                 muted
                 loop
                 playsInline
                 src="/VideoMe.mp4"
                 onLoadedData={() => setIsVideoLoaded(true)}
+                onError={() => setVideoError(true)} // Behandle Video-Ladefehler
                 style={{ display: isVideoLoaded ? "block" : "none" }}
               ></video>
             </div>
