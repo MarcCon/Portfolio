@@ -4,7 +4,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { IoMailOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-function LegalFooter() {
+function Footer() {
   return (
     <div
       id="kontakt"
@@ -65,4 +65,4 @@ function LegalFooter() {
   );
 }
 
-export default LegalFooter;
+export default Footer;
